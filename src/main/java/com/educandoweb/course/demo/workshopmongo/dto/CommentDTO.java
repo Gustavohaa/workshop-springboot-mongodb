@@ -3,31 +3,31 @@ package com.educandoweb.course.demo.workshopmongo.dto;
 import java.io.Serializable;
 import java.util.Date;
 
-public class CommentDTO implements Serializable{
+public class CommentDTO implements Serializable {
 
 	private static final long serialVersionUID = 1L;
-	
-	private String texto;
+
+	private String text;
 	private Date date;
 	private AuthorDTO author;
-	
+
 	public CommentDTO() {
-		
+
 	}
 
-	public CommentDTO(String texto, Date date, AuthorDTO author) {
+	public CommentDTO(String text, Date date, AuthorDTO author) {
 		super();
-		this.texto = texto;
+		this.text = text;
 		this.date = date;
 		this.author = author;
 	}
 
-	public String getTexto() {
-		return texto;
+	public String gettext() {
+		return text;
 	}
 
-	public void setTexto(String texto) {
-		this.texto = texto;
+	public void settext(String text) {
+		this.text = text;
 	}
 
 	public Date getDate() {
@@ -45,6 +45,5 @@ public class CommentDTO implements Serializable{
 	public void setAuthor(AuthorDTO author) {
 		this.author = author;
 	}
-	
-	
+
 }
